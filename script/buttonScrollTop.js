@@ -1,3 +1,5 @@
+let tecnologias
+
 window.onscroll = function() {
   exibirOcultarBotao();
 };
@@ -22,5 +24,27 @@ function voltarAoTopo() {
     document.body.scrollTop = 0; // Para navegadores mais antigos
     document.documentElement.scrollTop = 0; // Para navegadores modernos
   }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  tecnologias = [
+    document.getElementById('typescript'),
+    document.getElementById('react'),
+    document.getElementById('node'),
+    document.getElementById('mysql')
+  ]
+  tecnologias.map((tec)=> {
+    tec.style.display = 'none'
+  })
+});
+
+function showTec(tec) {
+  tecnologias.map((m, i)=> {
+    if(i === tec) {
+      m.style.display = 'block'
+    } else {
+      m.style.display = 'none'
+    }
+  })
 }
 

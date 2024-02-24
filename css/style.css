@@ -3,6 +3,11 @@ body {
   padding: 0 10vw;
   font-family: "Kanit", sans-serif;
   color: black;
+  background-color: rgb(216, 219, 196);
+}
+
+.small{
+  font-size: 13px;
 }
 
 h1{
@@ -46,13 +51,33 @@ section {
   box-sizing: border-box;
   background-color: darkseagreen;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
 }
 
-section>div {
+#sobre {
+  justify-content: space-around;
+}
+
+#sobre>div {
   width: 50%;
+}
+
+#experiencia{
+  flex-direction: column;
+  align-items: center;
+}
+#experiencia>div{
+  width: 60%;
+}
+
+#goat>h2>span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#tecnologias>img {
+  cursor: pointer;
 }
 
 #btnTop {
@@ -85,6 +110,15 @@ section>div {
 }
 
 
+@keyframes skills {
+  from {
+    height: 30px;
+  }
+  to {
+    height: 40px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
 
   object {
@@ -94,6 +128,10 @@ section>div {
   header>div {
     width: 45%;
   }
+
+  #experiencia>div {
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -102,7 +140,7 @@ section>div {
     padding: 0 1vw;
   }
 
-  object{
+  section>object{
     display: none;
   }
 
@@ -120,7 +158,16 @@ section>div {
     margin: 2%;
   }
 
-  section>div {
+  #sobre>div{
     width: 85%;
+  }
+
+  #arrow {
+    width: 30px;
+    height: 30px;
+    right: 10px;
+  }
+  #arrow>object {
+    width: 30px;
   }
 }
