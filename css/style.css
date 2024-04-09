@@ -1,16 +1,19 @@
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
   padding: 0 10vw;
   font-family: "Kanit", sans-serif;
   color: black;
-  background-color: rgb(216, 219, 196);
+  background-color: rgb(223, 223, 203);
 }
 
-.small{
+.small {
   font-size: 13px;
 }
 
-h1{
+h1 {
   font-size: xx-large;
 }
 
@@ -45,8 +48,8 @@ object {
 }
 
 section {
-  width: 80%;
-  margin: 10%;
+  width: 95%;
+  margin: 10% auto;
   padding: 5%;
   box-sizing: border-box;
   background-color: darkseagreen;
@@ -63,12 +66,13 @@ section {
   width: 50%;
 }
 
-#experiencia{
+#experiencia {
   flex-direction: column;
   align-items: center;
 }
-#experiencia>div{
-  width: 60%;
+
+#experiencia>div {
+  width: 80%;
 }
 
 #goat>h2>span {
@@ -109,14 +113,91 @@ section {
   opacity: 1;
 }
 
+#projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
 
-@keyframes skills {
-  from {
-    height: 30px;
-  }
-  to {
-    height: 40px;
-  }
+#projetos>ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.slider {
+  width: 300%;
+  text-align: center;
+  position: relative;
+  right: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Slider>li {
+  list-style: none;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.377);
+}
+
+#description {
+  display: none;
+}
+
+.buttonSlider {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-weight: 0;
+  font-size: 30px;
+  color: rgb(223, 223, 203);
+  cursor: pointer;
+}
+
+.buttonSlider:hover {
+  background-color: rgba(0, 0, 0, 0.150);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.150);
+}
+
+#buttons {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 108%;
+  height: 10px;
+  bottom: 120px;
+}
+
+.headerProject {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.headerProject>li {
+  padding: 5px 10px;
+  border-radius: 7px 7px 0 0;
+  cursor: pointer;
+}
+
+.headerProject>li:hover {
+  background-color: rgba(0, 0, 0, 0.150);
+}
+
+.MA{
+  width: 100%;
+}
+
+.MA>img {
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -140,7 +221,12 @@ section {
     padding: 0 1vw;
   }
 
-  section>object{
+  section {
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  section>object {
     display: none;
   }
 
@@ -158,7 +244,7 @@ section {
     margin: 2%;
   }
 
-  #sobre>div{
+  #sobre>div {
     width: 85%;
   }
 
@@ -167,7 +253,24 @@ section {
     height: 30px;
     right: 10px;
   }
+
   #arrow>object {
     width: 30px;
+  }
+
+  .slider {
+    width: 300%;
+  }
+
+  .buttonSlider {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  #buttons {
+    width: 110%;
+    bottom: 120px;
   }
 }

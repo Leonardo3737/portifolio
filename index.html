@@ -40,36 +40,81 @@
     <div>
       <h1>Experiência Profissional</h1>
       <div id="goat">
-        <h2>Goat Tech <span>jan/2023 - jan/2024</span></h2>
+        <h2>Goat Tech <br> <span>mar/2023 - nov/2023</span></h2>
         <h3>Densenvolvedor Web Full-Stack</h3>
-        <p class="small">Clique em uma tecnologia para um breve resumo das minhas staks</p>
+        <p class="small" id="description">Clique em uma tecnologia para um breve resumo de minhas staks</p>
         <div id="tecnologias">
-          <img onclick="showTec(0)" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-          <img onclick="showTec(1)" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="ReactJs">
-          <img onclick="showTec(2)" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJs">
-          <img onclick="showTec(3)" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySql">
+          <img onclick="headerControl(0, 'tecnologias')" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+          <img onclick="headerControl(1, 'tecnologias')" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="ReactJs">
+          <img onclick="headerControl(2, 'tecnologias')" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJs">
+          <img onclick="headerControl(3, 'tecnologias')" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySql">
         </div>
-        <p id="react">
+        <p class="tecnologias displayNoneJS">
           Desenvolvimento de sistemas web com reactJS, criando componentes bem estruturados, para melhorar e otimizar a performance
           do sistema, utilizando react hooks para a criação de funções específicas trazendo uma melhor experiencia para o usuário.
         </p>
-        <p id="typescript">
+        <p class="tecnologias displayNoneJS">
           Utilização do TypeScript para criar uma tipagem estática e estruturar melhor objetos e variáveis, 
           melhorando a legibilidade, facilitando a manutenção e evolução do código.
         </p>
-        <p id="node">
+        <p class="tecnologias displayNoneJS">
           Criação de apis com nodeJS para fazer a comunicação com o banco de dados, validações de acesso e gerenciamento de regras de negocio,
           sempre visando a otimização da estrutura do código para melhorar o desempenho, e criar uma experiencia agradável para o usuário
         </p>
-        <p id="mysql">
+        <p class="tecnologias displayNoneJS">
           Criação de queries e tabelas em banco de dados MySql, para a geração de relatórios. 
           Sempre visando uma estruturação adequada para não comprometer o desempenho do sistema
         </p>
       </div>
     </div>
   </section>
+  <span class="line"></span>
   <section id="projetos">
-
+    <h1>Projetos</h1>
+    <ul id="Slider">
+      <li id="myAnotations">
+        <h2>My Anotations</h2>
+        <div>
+          <ul class="headerProject">
+            <li onclick="headerControl(0, 'MA')">Home</li>
+            <li onclick="headerControl(1, 'MA')">Cadastro</li>
+            <li onclick="headerControl(2, 'MA')">Login</li>
+            <li onclick="headerControl(3, 'MA')">Criar Anotação</li>
+            <li onclick="headerControl(4, 'MA')">Lista de Anotações</li>
+          </ul>
+          <div class="MA displayNoneJS">
+            <img src="images/homeMyAnotations.jfif" alt="home" srcset="">
+            Home
+          </div>
+          <div class="MA displayNoneJS">
+            <img src="images/cadastroMyAnotations.jfif" alt="" srcset="">
+            Cadastro
+          </div>
+          <div class="MA displayNoneJS">
+            <img src="images/loginMyAnotations.jfif" alt="" srcset="">
+            Login
+          </div>
+          <div class="MA displayNoneJS">
+            <img src="images/criarAnotacaoMyAnotations.jfif" alt="" srcset="">
+            Criar
+          </div>
+          <div class="MA displayNoneJS">
+            <img src="images/anotacaoMyAnotations.jfif" alt="" srcset="">
+            Lista
+          </div>
+        </div>
+      </li>
+      <li id="whatsApp">
+        <h2>WhatsApp Clone</h2>
+      </li>
+      <li id="comingSoon">
+        <h2>Em Breve</h2>
+      </li>
+    </ul>
+    <div id="buttons">
+      <button id="buttonSliderL" class="buttonSlider" onclick="movSlider('left')"><</button>
+      <button id="buttonSliderR" class="buttonSlider" onclick="movSlider('right')">></button>
+    </div>
   </section>
   <div id="arrow" onclick="voltarAoTopo()">
     <button id="btnTop" ></button>
